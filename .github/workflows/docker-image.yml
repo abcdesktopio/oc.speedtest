@@ -4,7 +4,12 @@ name: main
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron: 0 0 * * 0
+  workflow_dispatch:
 
 env:
   imagetag: ${{ github.head_ref || github.ref_name || 'dev'||' main' }}
@@ -48,4 +53,4 @@ jobs:
           build-args: |
             branch:${{ env.branch }}
           tags: |
-            ghcr.io/abcdesktopio/oc.snapshot:${{ env.imagetag }}
+            ghcr.io/abcdesktopio/oc.speedtest:${{ env.imagetag }}
