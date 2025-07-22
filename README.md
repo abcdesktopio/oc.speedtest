@@ -1,2 +1,5 @@
 # oc.speedtest
-Upgraded version of speedtest
+
+Built upon the robust foundation of the **speedtest** base image, this Docker container introduces a seamless, non-intrusive update mechanism that ensures compatibility with existing workflows while enhancing system stability and performance. By leveraging automated dependency upgrades and optimized runtime configurations, the image maintains the original behavior of the speedtest application without requiring any changes to user-defined processes or scripts. This approach guarantees that all core functionalities—such as network speed measurement, benchmarking, and result reporting—remain fully intact, while enabling the container to benefit from the latest improvements in libraries, security patches, and efficiency optimizations.
+
+The result is a reliable, up-to-date environment that preserves the simplicity and effectiveness of the original speedtest implementation, making it ideal for continuous integration pipelines or production deployments where consistency is critical.
