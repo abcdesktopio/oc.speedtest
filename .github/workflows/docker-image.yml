@@ -49,7 +49,5 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          build-args: |
-            branch:${{ env.branch }}
           tags: |
             ghcr.io/abcdesktopio/oc.speedtest:${{ env.imagetag }}
