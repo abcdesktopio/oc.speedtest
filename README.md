@@ -2,7 +2,7 @@
 
 [![main](https://github.com/abcdesktopio/oc.speedtest/actions/workflows/docker-image.yml/badge.svg)](https://github.com/abcdesktopio/oc.speedtest/actions/workflows/docker-image.yml)
 
-Just a update and update from the `librespeed/speedtest`
+Just a update/upgrade from the `librespeed/speedtest` to fix potential security vulnerabilities
 
 ```
 FROM ghcr.io/librespeed/speedtest:latest-alpine
