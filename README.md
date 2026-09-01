@@ -2,9 +2,10 @@
 
 [![main](https://github.com/abcdesktopio/oc.speedtest/actions/workflows/docker-image.yml/badge.svg)](https://github.com/abcdesktopio/oc.speedtest/actions/workflows/docker-image.yml)
 
+Just a update and update from the `librespeed/speedtest`
 
-Built upon the robust foundation of the **speedtest** base image, this Docker container introduces a seamless, non-intrusive update mechanism that ensures compatibility with existing workflows while enhancing system stability and performance. 
+```
+FROM ghcr.io/librespeed/speedtest:latest-alpine
+RUN apk update --no-cache && apk upgrade --no-cache
+```
 
-By leveraging automated dependency upgrades and optimized runtime configurations, the image maintains the original behavior of the speedtest application without requiring any changes to user-defined processes or scripts. This approach guarantees that all core functionalities—such as network speed measurement, benchmarking, and result reporting—remain fully intact, while enabling the container to benefit from the latest improvements in libraries, security patches, and efficiency optimizations.
-
-The result is a reliable, up-to-date environment that preserves the simplicity and effectiveness of the original speedtest implementation, making it ideal for continuous integration pipelines or production deployments where consistency is critical.
